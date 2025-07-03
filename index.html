@@ -23,7 +23,7 @@
             font-size: 2.5rem;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
@@ -32,20 +32,20 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
         .links {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
-            gap: 2.5rem;
+            gap: 2rem;
             margin-bottom: 4rem;
         }
         .link-card {
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
-            width: 200px;
+            width: 180px;
             min-height: 120px; 
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -78,6 +78,9 @@
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8rem;
+            }
+            .links{
+                flex-wrap: wrap;
             }
             .link-card {
                 width: 100%;
